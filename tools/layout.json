@@ -30,7 +30,7 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/anticipated.gif",
+        "focusGifUrl": "@discover/focus/anticipated.webp",
         "titleLogoUrl": "",
         "coverImageUrl": "@discover/cover/anticipated.png",
         "catalogSources": [
@@ -73,7 +73,7 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/latest.gif",
+        "focusGifUrl": "@discover/focus/latest.webp",
         "titleLogoUrl": "",
         "coverImageUrl": "@discover/cover/latest.png",
         "catalogSources": [
@@ -116,8 +116,8 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/popular.gif",
-        "titleLogoUrl": "",
+        "focusGifUrl": "@discover/focus/popular.webp",
+        "titleLogoUrl": "@discover/title/popular.webp",
         "coverImageUrl": "@discover/cover/popular.png",
         "catalogSources": [
           {
@@ -134,7 +134,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/discover/backdrop/popular.webp",
         "heroVideoUrl": ""
       },
       {
@@ -159,8 +159,8 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/trending.gif",
-        "titleLogoUrl": "",
+        "focusGifUrl": "@discover/focus/trending.webp",
+        "titleLogoUrl": "@discover/title/trending.webp",
         "coverImageUrl": "@discover/cover/trending.png",
         "catalogSources": [
           {
@@ -177,7 +177,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/discover/backdrop/trending.webp",
         "heroVideoUrl": ""
       },
       {
@@ -202,8 +202,8 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/top-rated.gif",
-        "titleLogoUrl": "",
+        "focusGifUrl": "@discover/focus/top-rated.webp",
+        "titleLogoUrl": "@discover/title/top-rated.webp",
         "coverImageUrl": "@discover/cover/top-rated.png",
         "catalogSources": [
           {
@@ -220,7 +220,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/discover/backdrop/top-rated.webp",
         "heroVideoUrl": ""
       },
       {
@@ -245,8 +245,8 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "@discover/focus/recommended.gif",
-        "titleLogoUrl": "",
+        "focusGifUrl": "@discover/focus/recommended.webp",
+        "titleLogoUrl": "@discover/title/recommended.webp",
         "coverImageUrl": "@discover/cover/recommended.png",
         "catalogSources": [
           {
@@ -263,7 +263,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/discover/backdrop/recommended.webp",
         "heroVideoUrl": ""
       }
     ]
@@ -300,7 +300,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/netflix.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/netflix.webp",
         "coverImageUrl": "@streaming/cover/netflix.png",
         "catalogSources": [
           {
@@ -317,7 +317,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/netflix.webp",
         "heroVideoUrl": ""
       },
       {
@@ -343,7 +343,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/apple-tv.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/apple-tv.webp",
         "coverImageUrl": "@streaming/cover/apple-tv.png",
         "catalogSources": [
           {
@@ -360,7 +360,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/apple-tv.webp",
         "heroVideoUrl": ""
       },
       {
@@ -386,7 +386,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/prime-video.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/prime-video.webp",
         "coverImageUrl": "@streaming/cover/prime-video.png",
         "catalogSources": [
           {
@@ -403,7 +403,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/prime-video.webp",
         "heroVideoUrl": ""
       },
       {
@@ -429,7 +429,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/hulu.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/hulu.webp",
         "coverImageUrl": "@streaming/cover/hulu.png",
         "catalogSources": [
           {
@@ -446,7 +446,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/hulu.webp",
         "heroVideoUrl": ""
       },
       {
@@ -472,7 +472,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/hbo-max.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/hbo-max.webp",
         "coverImageUrl": "@streaming/cover/hbo-max.png",
         "catalogSources": [
           {
@@ -489,7 +489,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/hbo-max.webp",
         "heroVideoUrl": ""
       },
       {
@@ -515,7 +515,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/disney-plus.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/disney-plus.webp",
         "coverImageUrl": "@streaming/cover/disney-plus.png",
         "catalogSources": [
           {
@@ -532,7 +532,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/disney-plus.webp",
         "heroVideoUrl": ""
       },
       {
@@ -558,7 +558,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/paramount-plus.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/paramount-plus.webp",
         "coverImageUrl": "@streaming/cover/paramount-plus.png",
         "catalogSources": [
           {
@@ -575,7 +575,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/paramount-plus.webp",
         "heroVideoUrl": ""
       },
       {
@@ -601,7 +601,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/peacock.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/peacock.webp",
         "coverImageUrl": "@streaming/cover/peacock.png",
         "catalogSources": [
           {
@@ -618,7 +618,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/peacock.webp",
         "heroVideoUrl": ""
       },
       {
@@ -644,7 +644,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/crunchyroll.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/crunchyroll.webp",
         "coverImageUrl": "@streaming/cover/crunchyroll.png",
         "catalogSources": [
           {
@@ -661,7 +661,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/crunchyroll.webp",
         "heroVideoUrl": ""
       },
       {
@@ -687,7 +687,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/starz.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/starz.webp",
         "coverImageUrl": "@streaming/cover/starz.png",
         "catalogSources": [
           {
@@ -704,7 +704,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/starz.webp",
         "heroVideoUrl": ""
       },
       {
@@ -730,7 +730,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/shudder.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/shudder.webp",
         "coverImageUrl": "@streaming/cover/shudder.png",
         "catalogSources": [
           {
@@ -747,7 +747,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/shudder.webp",
         "heroVideoUrl": ""
       },
       {
@@ -773,7 +773,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "@streaming/focus/discoveryplus.gif",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@streaming/title/discovery-plus.webp",
         "coverImageUrl": "@streaming/cover/discoveryplus.png",
         "catalogSources": [
           {
@@ -790,7 +790,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/streaming/backdrop/discovery-plus.webp",
         "heroVideoUrl": ""
       }
     ]
@@ -827,7 +827,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/action.webp",
         "coverImageUrl": "@genres/cover/action.png",
         "catalogSources": [
           {
@@ -844,7 +844,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/action.webp",
         "heroVideoUrl": ""
       },
       {
@@ -913,7 +913,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/animation.webp",
         "coverImageUrl": "@genres/cover/animation.png",
         "catalogSources": [
           {
@@ -930,7 +930,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/animation.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1054,7 +1054,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/anime.webp",
         "coverImageUrl": "@genres/cover/anime.png",
         "catalogSources": [
           {
@@ -1155,7 +1155,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/anime.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1181,7 +1181,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/comedy.webp",
         "coverImageUrl": "@genres/cover/comedy.png",
         "catalogSources": [
           {
@@ -1198,7 +1198,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/comedy.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1224,7 +1224,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/crime.webp",
         "coverImageUrl": "@genres/cover/crime.png",
         "catalogSources": [
           {
@@ -1241,7 +1241,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/crime.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1267,7 +1267,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/documentary.webp",
         "coverImageUrl": "@genres/cover/documentary.png",
         "catalogSources": [
           {
@@ -1284,7 +1284,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/documentary.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1310,7 +1310,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/drama.webp",
         "coverImageUrl": "@genres/cover/drama.png",
         "catalogSources": [
           {
@@ -1327,7 +1327,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/drama.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1346,7 +1346,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/horror.webp",
         "coverImageUrl": "@genres/cover/horror.png",
         "catalogSources": [
           {
@@ -1357,7 +1357,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/horror.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1376,7 +1376,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/history.webp",
         "coverImageUrl": "@genres/cover/history.png",
         "catalogSources": [
           {
@@ -1387,7 +1387,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/history.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1420,7 +1420,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/kids-family.webp",
         "coverImageUrl": "@genres/cover/kids-family.png",
         "catalogSources": [
           {
@@ -1443,7 +1443,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/family.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1469,7 +1469,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/mystery.webp",
         "coverImageUrl": "@genres/cover/mystery.png",
         "catalogSources": [
           {
@@ -1486,7 +1486,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/mystery.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1505,7 +1505,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/reality.webp",
         "coverImageUrl": "@genres/cover/reality.png",
         "catalogSources": [
           {
@@ -1516,7 +1516,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/reality.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1535,7 +1535,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/romance.webp",
         "coverImageUrl": "@genres/cover/romance.png",
         "catalogSources": [
           {
@@ -1546,7 +1546,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/romance.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1579,7 +1579,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/sci-fi-fantasy.webp",
         "coverImageUrl": "@genres/cover/sci-fi-fantasy.png",
         "catalogSources": [
           {
@@ -1602,7 +1602,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/fantasy.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1621,7 +1621,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/thriller.webp",
         "coverImageUrl": "@genres/cover/thriller.png",
         "catalogSources": [
           {
@@ -1632,7 +1632,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/genres/backdrop/thriller.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1729,7 +1729,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/cartoon-network.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/cartoon-network.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1772,7 +1772,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/dc.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/dc.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1815,7 +1815,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/dreamworks.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/dreamworks.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1858,7 +1858,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/ghibli.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/ghibli.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1901,7 +1901,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/marvel.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/marvel.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1944,7 +1944,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/nickelodeon.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/nickelodeon.webp",
         "heroVideoUrl": ""
       },
       {
@@ -1987,7 +1987,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/pixar.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/pixar.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2030,7 +2030,7 @@
           }
         ],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "@studios/backdrop/lucasfilm.webp",
+        "heroBackdropUrl": "lk:collections/studios/backdrop/lucasfilm.webp",
         "heroVideoUrl": ""
       }
     ]
@@ -2084,7 +2084,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/2020s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2127,7 +2127,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/2010s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2170,7 +2170,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/2000s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2213,7 +2213,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/1990s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2256,7 +2256,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/1980s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2299,7 +2299,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/1970s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2342,7 +2342,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/1960s.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2385,7 +2385,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/decades/backdrop/1950s.webp",
         "heroVideoUrl": ""
       }
     ]
@@ -2426,7 +2426,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/runtime/backdrop/short.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2456,7 +2456,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/runtime/backdrop/standard.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2486,7 +2486,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/runtime/backdrop/long.webp",
         "heroVideoUrl": ""
       },
       {
@@ -2516,7 +2516,7 @@
           }
         ],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "",
+        "heroBackdropUrl": "lk:collections/runtime/backdrop/epic.webp",
         "heroVideoUrl": ""
       }
     ]

@@ -9,7 +9,10 @@ Asset paths in layout.json start with "@" and are relative to the nuvio-art repo
 Same collection/folder ids every time, so re-importing replaces in place."""
 import argparse, json, os, sys, copy
 HERE = os.path.dirname(os.path.abspath(__file__))
-USER, REPO, TAG = "jbuschini18", "nuvio-art", "v2"
+USER, REPO, TAG = "jbuschini18", "nuvio-art", "v3"
+# Live poster-wall backdrops (third-party, refreshed monthly by luckynumb3rs' GitHub Action). "lk:" paths in layout.json.
+LIVE = {"raw": "https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/main/",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/"}   # = exact URLs in his original export
 CURRENT_AIOM = "/workspace/nuvio/mine.json"            # his live AIOMetadata export
 PROPOSED_AIOM = os.path.join(HERE, "aiometadata", "aiometadata_us.json")
 NEEDS_AIOM_CHANGE = {"collections.discover.anticipated", "collections.discover.latest"}
@@ -19,7 +22,7 @@ def base_url(kind, tag):
     return (f"https://cdn.jsdelivr.net/gh/{USER}/{REPO}@{tag}/" if kind == "jsdelivr"
             else f"https://raw.githubusercontent.com/{USER}/{REPO}/{tag}/")
 
-def build(layout, base, genre_art, with_aiom_change):
+def build(layout, base, genre_art, with_aiom_change, live="raw"):
     cols = copy.deepcopy(layout)
     for c in cols:
         if not with_aiom_change:
@@ -31,6 +34,7 @@ def build(layout, base, genre_art, with_aiom_change):
                 if genre_art == "none": f["hideTitle"] = False
             for k, v in list(f.items()):
                 if isinstance(v, str) and v.startswith("@"): f[k] = base + v[1:]
+                elif isinstance(v, str) and v.startswith("lk:"): f[k] = LIVE[live] + v[3:]
         for k in ("backdropImageUrl",):
             if isinstance(c.get(k), str) and c[k].startswith("@"): c[k] = base + c[k][1:]
     return cols
@@ -76,33 +80,40 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", default=TAG); ap.add_argument("--base", choices=["jsdelivr", "raw"], default="jsdelivr")
     ap.add_argument("--genre-art", choices=["repo", "alt", "none"], default="repo")
+    ap.add_argument("--hero-host", choices=["raw", "jsdelivr"], default="raw",
+                    help="host for the live backdrops; jsdelivr = his original URLs but that repo is >50 MB and jsDelivr intermittently 403s it")
     a = ap.parse_args()
     layout = json.load(open(os.path.join(HERE, "layout.json")))
     base = base_url(a.base, a.tag)
     outs = {"nuvio-collections.json": (False, CURRENT_AIOM),
             "nuvio-collections.with-anticipated-latest.json": (True, PROPOSED_AIOM)}
-    urls = set()
+    urls, ext = set(), set()
+    art = os.path.join(HERE, f"nuvio-art-{a.tag}")
+    if not os.path.isdir(art): sys.exit(f"missing upload folder {art}")
     for name, (aiom_change, aiom) in outs.items():
-        cols = build(layout, base, a.genre_art, aiom_change)
+        cols = build(layout, base, a.genre_art, aiom_change, a.hero_host)
         n = nuvio_validate(json.loads(json.dumps(cols)))
         errs = catalog_check(cols, aiom)
         if errs: print(name, "ERRORS", *errs, sep="\n  "); sys.exit(1)
         for c in cols:
             for f in c["folders"]:
                 for k, v in f.items():
+                    if isinstance(v, str) and v.startswith(LIVE[a.hero_host]):
+                        ext.add(v); continue
                     if isinstance(v, str) and v.startswith("http"):
                         urls.add(v)
                         rel = v[len(base):] if v.startswith(base) else None
-                        if rel is None or not os.path.exists(os.path.join(HERE, "nuvio-art-v2", rel)):
+                        if rel is None or not os.path.exists(os.path.join(art, rel)):
                             print("NOT IN UPLOAD FOLDER:", v); sys.exit(1)
         urls.add(base + "collections/" + name)
         txt = json.dumps(cols, ensure_ascii=False, indent=2) + "\n"
         open(os.path.join(HERE, name), "w").write(txt)
-        os.makedirs(os.path.join(HERE, "nuvio-art-v2", "collections"), exist_ok=True)
-        open(os.path.join(HERE, "nuvio-art-v2", "collections", name), "w").write(txt)  # importable From URL
+        os.makedirs(os.path.join(art, "collections"), exist_ok=True)
+        open(os.path.join(art, "collections", name), "w").write(txt)  # importable From URL
         print(f"OK {name}: {len(cols)} collections, {n} folders, all catalogs exist+enabled in {os.path.basename(aiom)}")
     open(os.path.join(HERE, "urls.txt"), "w").write("\n".join(sorted(urls)) + "\n")
-    print(f"{len(urls)} image URLs -> urls.txt (base {base})")
+    open(os.path.join(HERE, "urls_live.txt"), "w").write("\n".join(sorted(ext)) + "\n")
+    print(f"{len(urls)} self-hosted URLs -> urls.txt (base {base}); {len(ext)} live backdrop URLs -> urls_live.txt")
 
 if __name__ == "__main__":
     main()
