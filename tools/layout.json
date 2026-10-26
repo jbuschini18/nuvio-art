@@ -870,7 +870,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/adventure.webp",
         "coverImageUrl": "@genres/cover/adventure.png",
         "catalogSources": [
           {
@@ -1658,7 +1658,7 @@
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",
-        "titleLogoUrl": "",
+        "titleLogoUrl": "@genres/title/war.webp",
         "coverImageUrl": "@genres/cover/war.png",
         "catalogSources": [
           {

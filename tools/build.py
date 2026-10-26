@@ -9,7 +9,7 @@ Asset paths in layout.json start with "@" and are relative to the nuvio-art repo
 Same collection/folder ids every time, so re-importing replaces in place."""
 import argparse, json, os, sys, copy
 HERE = os.path.dirname(os.path.abspath(__file__))
-USER, REPO, TAG = "jbuschini18", "nuvio-art", "v3"
+USER, REPO, TAG = "jbuschini18", "nuvio-art", "v4"
 # Live poster-wall backdrops (third-party, refreshed monthly by luckynumb3rs' GitHub Action). "lk:" paths in layout.json.
 LIVE = {"raw": "https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/main/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/"}   # = exact URLs in his original export
